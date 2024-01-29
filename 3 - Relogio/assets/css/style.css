@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.fundo-cor{
+    position: absolute;
+    background-color: rgb(13, 13, 136);
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.button{
+    padding: 20px;
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    left: 40%;
+    top: 80%;
+
+}
+
+.relogio{
+    position: absolute;
+    height: 15%;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hora{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10em;
+}
+
+.minutos{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10em;
+}
+
+.segundos{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 130%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10em;
+}

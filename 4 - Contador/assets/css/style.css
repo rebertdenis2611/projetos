@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.contador{
+    position: absolute;
+    background-color: rgb(13, 13, 136);
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+}
+
+.qtd-number{
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.monitor{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+
+.botoes{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.aumentar{
+    padding: 50px;
+}
+
+.aumentar:hover{
+    background-color: aqua;
+}
+
+.diminuir{
+    padding: 50px;
+}
+
+.diminuir:hover{
+    background-color: aqua;
+}
