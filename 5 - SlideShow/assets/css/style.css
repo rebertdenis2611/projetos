@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.girar{
+    width: 30vw;
+    height: 30vh;
+    justify-items: center;
+    align-items: center;
+}
