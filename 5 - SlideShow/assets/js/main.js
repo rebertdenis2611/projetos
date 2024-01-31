@@ -1,19 +1,24 @@
 const slide = document.querySelector('.slide')
+
 let imagem = [
     'assets/img/1.jpg',
-    'assets/img/2.jpg'
+    'assets/img/2.jpg',
+    'assets/img/3.jpg'
 ]
 
-let count = 0
+count = 0
+tempo = 2000
 
 function mudarImagem(){
-    setTimeout(() =>{
+    if(count < 2){
         count++
-        slide.src = imagem[count]
-    },1000)
+    }else{
+        count = 0
+    }
+    
+    slide.src = imagem[count]
+        
+    setTimeout(mudarImagem, tempo)
 }
 
-if(count !== 3){
-    mudarImagem()
-}
-
+mudarImagem()
