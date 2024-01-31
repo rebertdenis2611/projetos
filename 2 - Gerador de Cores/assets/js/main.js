@@ -13,4 +13,3 @@ function trocaCor(){
     fundo.style.backgroundColor = `rgb(${rand()}, ${rand()}, ${rand()})`
 }
 
-//console.log(rand(), rand(), rand()
