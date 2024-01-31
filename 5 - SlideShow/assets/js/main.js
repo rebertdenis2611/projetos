@@ -13,6 +13,7 @@ function mudarImagem(){
     },1000)
 }
 
+if(count !== 3){
+    mudarImagem()
+}
 
-    
-mudarImagem()
