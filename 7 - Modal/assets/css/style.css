@@ -1,0 +1,34 @@
+body{
+    background-color: dodgerblue;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.modal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+p{
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.container{
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
