@@ -10,25 +10,39 @@ body{
 
 
 .modal{
-    background-color: white;
     display: flex;
     flex-direction: column;
-    padding: 30px;
     border-radius: 10px;
-    width: 30%;
-}
-
-p{
-    margin: 10px auto;
-    text-align: justify;
+    width: 50vw;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
 }
 
 .container{
-    width: 100vw;
+    width: 50vw;
     position: fixed;
-    top: 30px;
+    top: 30%;
     z-index: 999;
-    display: none;
     justify-content: center;
     align-items: center;
+    display: none;
+}
+
+span{
+    margin: 10px auto;
+    text-align: justify;
+    padding: 10px;
+}
+
+.abrir{
+    padding: 30px;
+    display: flex;
+}
+
+.fechar{
+    background-color: rgb(48, 48, 243);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
 }
