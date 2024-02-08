@@ -1,36 +1,31 @@
-@charset "UTF-8";
-
-#calculadora{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(49, 49, 172);
-    padding: 100px;
+:root{
+    --color1: blue;
+    --color2: green;
 }
 
 body{
-    background-color: blueviolet;
+    background-color: darkblue;
+    color: white;
 }
 
-.visor{
-    position: absolute;
-    top: 30px;
-    left: 16%;
-    width: 64%;
-    padding: 10px;
-    height: 30px;
+.calculadora{
+    background-color: white;
+    width: 50%;
+    padding: 20px;
 }
 
 .btn{
-    padding: 50px;
-    width: 30px;
+    padding: 10px;
 }
 
-li{
-    list-style: none;
+button{
+    width: 100px;
+    height: 50px;
 }
-ul{
-    padding: 0px;
+
+.display{
+    width: 98%;
+    height: 50px;
+    color: black;
+    font-size: 2em;
 }
