@@ -7,10 +7,10 @@ class calculadora{
         document.addEventListener('click', (e) =>{
             const el = e.target;
             if(el.classList.contains('btn-num')){
-                this.inserirDisplay(el.innerHTML);
+                this.inserirDisplay(el.innerHTML)
             }
-            if(el.classList.contains('btn-igual')){
-                console.log(this.inserirDisplay())
+            if(el.classList.contains('btn-clear')){
+                this.inserirDisplay(' ')
             }
         })
     }
@@ -22,9 +22,9 @@ class calculadora{
     }
 
     inserirDisplay(valor){
-        const display = document.querySelector('.display');
-        display.value += valor;
-        return(eval(display.value))
+        let display = document.querySelector('.display');
+        display.value += valor
+
     }
 }
 
