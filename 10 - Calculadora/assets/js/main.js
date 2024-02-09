@@ -3,14 +3,14 @@ class calculadora{
 
     }
 
-    capturaValorBotao(){
+    capturaValorBotao(valor){
         document.addEventListener('click', (e) =>{
             const el = e.target;
             if(el.classList.contains('btn-num')){
                 this.inserirDisplay(el.innerHTML);
             }
             if(el.classList.contains('btn-igual')){
-                console.log(this.inserirDisplay())
+                this.inserirDisplay(eval(e.innerHTML))
             }
         })
     }
@@ -23,8 +23,7 @@ class calculadora{
 
     inserirDisplay(valor){
         const display = document.querySelector('.display');
-        display.value += valor;
-        return(eval(display.value))
+        return display.value += valor;
     }
 }
 
