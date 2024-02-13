@@ -18,6 +18,11 @@ body{
     padding: 10px;
 }
 
+.btn:hover{
+    padding: 10px;
+    background-color: lightslategray;
+}
+
 button{
     width: 100px;
     height: 50px;
@@ -28,4 +33,13 @@ button{
     height: 50px;
     color: black;
     font-size: 2em;
+    text-align: right;
+}
+
+.btn-igual{
+    background-color: green;
+}
+
+.btn-igual:hover{
+    background-color: rgb(44, 212, 44);
 }
