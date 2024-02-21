@@ -1,31 +1,55 @@
-class calculadora{
-    constructor(){
+let display = document.querySelector('.display');
 
+class calculadora{
+    constructor(display){
+        this.display = display;
     }
 
-    capturaValorBotao(valor){
+    iniciar(){
+        this.capturaValorBotao()
+        this.pegarEnter()
+    }
+    capturaValorBotao(){
         document.addEventListener('click', (e) =>{
             const el = e.target;
+            display.focus()
             if(el.classList.contains('btn-num')){
-                this.inserirDisplay(el.innerHTML);
+                display.value += el.innerHTML
+                display.focus()
             }
             if(el.classList.contains('btn-igual')){
-                this.inserirDisplay(eval(e.innerHTML))
+                if(el.classList.contains('btn-igual')){
+                    if(display.value === ''){
+                        return
+                    }else{
+                        display.value = this.fazerCalculo()
+                    }
+                }
+            }
+            if(el.classList.contains('btn-clear')){
+                display.value = ''
+            }
+            if(el.classList.contains('btn-apagar')){
+                display.value = display.value.slice(0, -1)
             }
         })
     }
 
-    fazerCalculo(valor){
+    pegarEnter(){
+        document.addEventListener('keypress', (e) =>{
+            const keyName = e.key
+            const el = e.target
+            //ajustar para pegar das funções, ficará mais pratico.
+        })
+    }
+
+    fazerCalculo(){
+        let valor = display.value
         const calc = eval(valor);
-        console.log(calc);
         return calc;
     }
 
-    inserirDisplay(valor){
-        const display = document.querySelector('.display');
-        return display.value += valor;
-    }
 }
 
-const calc = new calculadora();
-calc.capturaValorBotao()
+const calc = new calculadora(display);
+calc.iniciar()
